@@ -6,23 +6,13 @@
 </p>
 
 <p>
-  <strong>Address city:</strong>
-  <%= @event.address_city %>
+  <strong>Address:</strong>
+  <%= @event.address %>
 </p>
 
 <p>
-  <strong>Address state:</strong>
-  <%= @event.address_state %>
-</p>
-
-<p>
-  <strong>Start date:</strong>
-  <%= @event.start_date %>
-</p>
-
-<p>
-  <strong>End date:</strong>
-  <%= @event.end_date %>
+  <strong>Period:</strong>
+  <%= @event.date_range %>
 </p>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |

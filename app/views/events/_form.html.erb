@@ -16,6 +16,7 @@
     <%= f.text_field :name %>
   </div>
 
+  <!-- Address -->
   <div class="field">
     <%= f.label :address_city %>
     <%= f.text_field :address_city %>
@@ -26,6 +27,7 @@
     <%= f.text_field :address_state %>
   </div>
 
+  <!-- DateRange -->
   <div class="field">
     <%= f.label :start_date %>
     <%= f.date_select :start_date %>
@@ -34,6 +36,35 @@
   <div class="field">
     <%= f.label :end_date %>
     <%= f.date_select :end_date %>
+  </div>
+
+  <!-- Grading -->
+  <div class="field">
+    <%= f.label :score %>
+    <%= f.number_field :score %>
+  </div>
+
+  <!-- Money -->
+  <div class="field">
+    <%= f.label :cents %>
+    <%= f.number_field :cents %>
+  </div>
+
+  <div class="field">
+    <%= f.label :currency %>
+    <%= f.select :currency, ['eur', 'dollare'] %>
+  </div>
+
+  <!-- Color -->
+  <div class="field">
+    <%= f.label :color_theme %>
+    <%= f.select :currency, ['black', 'green', 'blue'] %>
+  </div>
+
+  <!-- Size -->
+  <div class="field">
+    <%= f.label :size %>
+    <%= f.select :size, ['small', 'medium', 'big'] %>
   </div>
 
   <div class="actions">
